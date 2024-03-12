@@ -21,9 +21,12 @@ p{
 }
 .container{
     width: 100%;
-    max-width: 630px;
+    max-width: 730px;
     margin: 0 auto;
     padding: 0;
+}
+h2{
+    text-transform: uppercase;
 }
 .flex{
     display: flex;
@@ -34,9 +37,22 @@ p{
 .flex.ai-c{
     align-items: center;
 }
+.as-c{
+    align-self: center;
+}
+.fb-40{
+    flex-basis: 40%;
+}
+.fb-60{
+    flex-basis: 60%;
+}
 .px-30{
     padding-left: 30px;
     padding-right: 30px;
+}
+.py-30{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .bold{
     color:var(--txt-clr);
@@ -49,10 +65,8 @@ a{
     background-color: var(--primary);
 }
 .header__img {
-    max-width: auto;
-    max-height: 100%;
+    width: auto;
     object-fit: cover;
-    
 }
 .header__img img{
     width: 100%;
@@ -62,4 +76,7 @@ a{
 
 .main__left{
     background-color: var(--secondary);
+}
+.main__right{
+    background-color: var(--white);
 }
