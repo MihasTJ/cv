@@ -1,6 +1,5 @@
 *{
     margin:0;
-    padding:0;
 }
 :root{
     --primary:#dbdbdb;
@@ -10,23 +9,31 @@
     --bg:rgb(235,236,240);
 
     --font:"Roboto", sans-serif;
+
+    --rodo:80px;
 }
 body{
-    font-size:13px;
+    font-size:12px;
     background-color: var(--bg);
     font-family: var(--font);
 }
 p{
     line-height: 1.5;
 }
-.container{
+.os-grid{
     width: 100%;
-    max-width: 730px;
+    max-width: 780px;
     margin: 0 auto;
     padding: 0;
 }
 h2{
     text-transform: uppercase;
+    padding:15px 0;
+    font-weight: 700;
+    font-size:1rem;
+}
+h3{
+    font-size:0.75rem;
 }
 .flex{
     display: flex;
@@ -36,6 +43,9 @@ h2{
 }
 .flex.ai-c{
     align-items: center;
+}
+.flex.fd-c{
+    flex-direction: column;
 }
 .as-c{
     align-self: center;
@@ -50,16 +60,47 @@ h2{
     padding-left: 30px;
     padding-right: 30px;
 }
+.px-70{
+    padding-left: 70px;
+    padding-right: 70px;
+}
 .py-30{
     padding-top: 30px;
     padding-bottom: 30px;
 }
+.ta-c{
+    text-align: center;
+}
+ul{
+    padding-left:15px;
+}
+ul > li{
+    line-height: 1.5;
+}
+ul > li:last-child{
+    padding-bottom:1em;
+}
+ul > li::marker{
+    font-size:0.625rem;
+}
 .bold{
     color:var(--txt-clr);
+    font-weight: 800;
 }
 a{
     text-decoration: none;
-    color:var(--txt-clr);
+}
+.separator{
+    width: 55px;
+    height: 4px;
+    background-color:var(--txt-clr);
+    margin-top:1em;
+}
+.container{
+    box-shadow: var(--primary) 0px 8px 24px;
+}
+.container > div{
+    padding-bottom:var(--rodo);
 }
 .header{
     background-color: var(--primary);
@@ -68,15 +109,42 @@ a{
     width: auto;
     object-fit: cover;
 }
+.header__desc{
+    background-color: var(--primary);
+}
+.header__img, .header__desc {
+    max-height: 270px;
+    min-height: 270px;
+    margin:0 -70px;
+}
+
 .header__img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
+.main__contact-username{
+    font-size: 3.2em;
+    font-weight: 500;
+    margin-top: -1.6em;
+}
+.main__contact-username span{
+    filter:invert(1);
+}
 .main__left{
     background-color: var(--secondary);
+    max-width:173px;
 }
 .main__right{
     background-color: var(--white);
+}
+.main__left > div, .main__right > div, .main__education > div, .main__achievements > div{
+    margin-bottom:1em;
+}
+.rodo{
+    margin-top:calc( -1 * var(--rodo) + 1em);
+}
+.rodo p{
+    font-size:0.95em;
+    line-height: 1.2;
 }

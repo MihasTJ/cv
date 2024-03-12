@@ -10,32 +10,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="header flex jc-c">
+    <div class="container os-grid flex">
+        <div class="main__left fb-40 flex fd-c px-70">
             <div class="header__img fb-40">
                 <img src="./img/myphoto.jpg" alt="Zdjęcie profilowe autora">
             </div>
-            <div class="header__desc px-30 py-30 as-c fb-60">
-                <p>Absolwent Informatyki i Ekonometrii na Krakowskiej Akademii im.
-                    Andrzeja Frycza Modrzewskiego szuka możliwości rozwoju jako web
-                    developer. Znam język angielski, chętnie podnoszę swoje
-                    kwalifikacje, ucząc się i stawiając na rozwój.</p>
+
+            <div class="main__contact">
+                <div class="main__contact-username ta-c"><span>Michał</span> Janioł</div>
+                <h2>Kontakt</h2>
+                <p>E-mail</p>
+                <a href="mailto:michal.janiol00@gmail.com" class="bold">michal.janiol00@gmail.com</a>
+                <p>Telefon</p>
+                <a href="tel:+48880043966" class="bold">880 043 966</a>
+                <p>Data Urodzenia:</p>
+                <p>19.09.2000</p>
+                <p>Miejscowość</p>
+                <p>Trzciana</p>
             </div>
-        </div>
-        <div class="main">
-            <div class="main__left">
-                <div class="main__contact">
-                    <h2>Kontakt</h2>
-                    <p>E-mail</p>
-                    <a href="mailto:michal.janiol00@gmail.com">michal.janiol00@gmail.com</a>
-                    <p>Telefon</p>
-                    <a href="tel:+48880043966">880 043 966</a>
-                    <p>Data Urodzenia:</p>
-                    <p>19.09.2000</p>
-                    <p>Miejscowość</p>
-                    <p>Trzciana</p>
-                </div>
-                <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="main__abilities">
                 <h2>UMIEJĘTNOŚCI I SPECJALNOŚCI</h2>
                 <ul>
                     <li>HTML, CSS/SCSS, JavaScript,
@@ -46,11 +40,15 @@
                         metody pracy</li>
                     <li>Umiejętność pracy w zespole</li>
                 </ul>
+            </div>
+            <div class="main__languages">
                 <h2>Języki</h2>
                 <ul>
                     <li>Polski: ojczysty</li>
                     <li>Angielski: B2</li>
                 </ul>
+            </div>
+            <div class="main__hobby">
                 <h2>ZAINTERESOWANIA</h2>
                 <p>Pasjonuję się nowymi
                     technologiami oraz rozwojem
@@ -60,9 +58,18 @@
                     Dodatkowo uprawiam sport
                     oraz czytam książki.</p>
             </div>
-            <div class="main__right">
+            
+        </div>
+        <div class="main__right fb-60 px-70">
+            <div class="header__desc px-30 fb-60 flex ai-c">
+                <p>Absolwent Informatyki i Ekonometrii na Krakowskiej Akademii im.
+                    Andrzeja Frycza Modrzewskiego szuka możliwości rozwoju jako web
+                    developer. Znam język angielski, chętnie podnoszę swoje
+                    kwalifikacje, ucząc się i stawiając na rozwój.</p>
+            </div>
+            <div class="main__experience">
                 <h2>Doświadczenie zawodowe</h2>
-                <p>03.2023 - 07.2023 [5 mies.]</p>
+                <p class="bold">03.2023 - 07.2023 [5 mies.]</p>
                 <h3>Praktyki / Wave Brand</h3>
                 <div class="bold">trzciana.pl (Strona Gminy Trzciana):</div>
                 <ul>
@@ -76,6 +83,7 @@
                     <li>Implementacja projektu graficznego z Photoshop, za
                         pomocą HTML, CSS, jQuery</li>
                 </ul>
+
                 <div class="bold">a-trans.com.pl (Strona Usług Transportowych A-Trans):</div>
                 <ul>
                     <li>Wykorzystanie technologii jQuery do implementacji
@@ -92,30 +100,44 @@
                         jak HTML,CSS, uwzględniając zasady responsywnego
                         projektowania (RWD)</li>
                 </ul>
-
+            </div>
+            <div class="main__education">
                 <h2>Wykształcenie</h2>
-                <p>10.2020 - 03.2024</p>
-                <div class="bold">Krakowska Akademia im. Andrzeja Frycza Modrzewskiego</div>
-                <p>Kierunek: informatyka i ekonometria</p>
-                <p>Poziom wykształcenia: inżynier</p>
-
-                <p>09.2016 – 06.2020</p>
-                <div class="bold">Zespół Szkół Nr 1 w Bochni im. Stanisława Staszica</div>
-                <p>Kierunek: informatyk</p>
-                <p>Poziom wykształcenia: technik</p>
-
+                <div class="main__education-newest">
+                    <p>10.2020 - 03.2024</p>
+                    <div class="bold">Krakowska Akademia im. Andrzeja Frycza Modrzewskiego</div>
+                    <p>Kierunek: informatyka i ekonometria</p>
+                    <p>Poziom wykształcenia: inżynier</p>
+                </div>
+                
+                <div class="main__education-oldest">
+                    <p>09.2016 – 06.2020</p>
+                    <div class="bold">Zespół Szkół Nr 1 w Bochni im. Stanisława Staszica</div>
+                    <p>Kierunek: informatyk</p>
+                    <p>Poziom wykształcenia: technik</p>
+                </div>
+            </div>
+            <div class="main__achievements">
                 <h2>Szkolenia, kursy, certyfikaty</h2>
-                <p>06.2022</p>
-                <div class="bold">,,Project Challange" - min. tworzenie profesjonalnej strony
-                    firmowej, techniki i metody obsługi klienta problematycznego.</div>
-
-                <p>2018-2020</p>
-                <div class="bold">E12, E13, E14</div>
+                <div class="main__achievements-item">
+                    <p>06.2022</p>
+                    <div class="bold">,,Project Challange" - min. tworzenie profesjonalnej strony
+                        firmowej, techniki i metody obsługi klienta problematycznego.</div>
+                </div>
+                <div class="main__achievements-item">
+                    <p>2018-2020</p>
+                    <div class="bold">E12, E13, E14</div>
+                </div>
             </div>
         </div>
+    </div>
+    <div class="os-grid">
+        <div class="rodo px-70 ta-c">
             <p>Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie z
                 Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w
                 związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).</p>
+        </div>
+            
     </div>
 </body>
 </html>
