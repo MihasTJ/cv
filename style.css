@@ -96,10 +96,10 @@ a{
     background-color:var(--txt-clr);
     margin-top:1em;
 }
-.container{
+.main {
     box-shadow: var(--primary) 0px 8px 24px;
 }
-.container > div{
+.main > div{
     padding-bottom:var(--rodo);
 }
 .header{
@@ -147,4 +147,10 @@ a{
 .rodo p{
     font-size:0.95em;
     line-height: 1.2;
+}
+
+@media screen and (max-width:767px) {
+    :root{
+        --primary:red;
+    }
 }
