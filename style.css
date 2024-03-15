@@ -161,17 +161,13 @@ a{
     .main__contact-username {
         color:var(--white);
     }
-    .header__img{
-        min-height: auto;
-        max-height: unset;
-    }
     .main__left > div{
         margin-bottom:0;
     }
     .main__contact-username{
-    text-wrap: nowrap;
+        text-wrap: nowrap;
     }
-    .header__desc{
+    .header__img .header__desc{
         max-height: unset;
         min-height: auto;
     }
