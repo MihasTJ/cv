@@ -85,12 +85,6 @@ a{
 .as-c{
     align-self: center;
 }
-.fb-40{
-    flex-basis: 40%;
-}
-.fb-60{
-    flex-basis: 60%;
-}
 .px-30{
     padding-left: 30px;
     padding-right: 30px;
