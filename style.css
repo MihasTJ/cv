@@ -182,6 +182,7 @@ ul > li::marker{
     margin-bottom:1em;
 }
 .rodo{
+    position:relative;
     margin-top:calc( -1 * var(--rodo) + 1em);
 }
 .rodo p{
