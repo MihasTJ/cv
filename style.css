@@ -1,3 +1,4 @@
+/* default values*/
 *{
     margin:0;
 }
@@ -21,12 +22,6 @@ body{
 p{
     line-height: 1.5;
 }
-.os-grid{
-    width: 100%;
-    max-width: 780px;
-    margin: 0 auto;
-    padding: 0;
-}
 h2{
     text-transform: uppercase;
     padding:15px 0;
@@ -35,6 +30,45 @@ h2{
 }
 h3{
     font-size:0.75rem;
+}
+a{
+    text-decoration: none;
+}
+/*darkmode*/
+.darkmode, .darkmode img, .darkmode .main__contact-username span{
+    filter: invert(1);
+}
+.darkmode{
+    background-color: rgb(0, 0, 0);
+}
+.darkmode .main__contact-username span{
+    font-weight: 400;
+}
+/******** darkmode button *******/
+#darkbtn{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    width: 25px;
+    height: 25px;
+    border:none;
+    cursor: pointer;
+    background-color: var(--txt-clr);
+    z-index: 1;
+}
+#darkbtn img{
+    width: 100%;
+    height: auto;
+    filter: invert(1);
+}
+/* class funcion */
+.os-grid{
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0;
 }
 .flex{
     display: flex;
@@ -72,6 +106,13 @@ h3{
 .ta-c{
     text-align: center;
 }
+.bold{
+    color:var(--txt-clr);
+    font-weight: 800;
+}
+/* end class function */
+
+/*list*/
 ul{
     padding-left:15px;
 }
@@ -84,13 +125,8 @@ ul > li:last-child{
 ul > li::marker{
     font-size:0.625rem;
 }
-.bold{
-    color:var(--txt-clr);
-    font-weight: 800;
-}
-a{
-    text-decoration: none;
-}
+
+/* other class */
 .separator{
     width: 55px;
     height: 4px;
@@ -98,6 +134,7 @@ a{
     margin-top:1em;
 }
 .main {
+    position: relative;
     box-shadow: var(--primary) 0px 8px 24px;
 }
 .main > div{
@@ -113,17 +150,18 @@ a{
 }
 .header__desc{
     background-color: var(--primary);
+    position: relative;
 }
 .header__img, .header__desc {
     max-height: 270px;
     min-height: 270px;
     margin:0 -70px;
 }
-
 .header__img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    max-height: 300px;
 }
 .main__contact-username{
     font-size: 3.2em;
@@ -151,25 +189,26 @@ a{
     line-height: 1.2;
 }
 
+
+/*responsive */
 @media screen and (max-width:767px) {
+    :root{
+        --rodo-height:0;
+    }
     .header__img, .header__desc {
         margin:0 -30px;
+        max-height: unset;
+        min-height: auto;
     }
     .main__left{
         max-width: unset;
-    }
-    .main__contact-username {
-        color:var(--white);
     }
     .main__left > div{
         margin-bottom:0;
     }
     .main__contact-username{
+        color:var(--white);
         text-wrap: nowrap;
-    }
-    .header__img .header__desc{
-        max-height: unset;
-        min-height: auto;
     }
     .main__left:first-child{
         padding-bottom:30px;
@@ -178,7 +217,14 @@ a{
         background-color: var(--white);
         padding-bottom:1em;
     }
-    :root{
-        --rodo-height:0;
+    .darkmode .main__contact-username span{
+        filter: invert(0);
+    }
+    .darkmode .main__contact-username {
+        filter:invert(1);
+    }
+    #darkbtn{
+        width: 35px;
+        height: 35px;
     }
 }
