@@ -137,7 +137,7 @@ ul > li::marker{
     position: relative;
     box-shadow: var(--primary) 0px 8px 24px;
 }
-.main > div{
+.main > div:last-child{
     padding-bottom:var(--rodo);
 }
 .header{
@@ -182,6 +182,7 @@ ul > li::marker{
     margin-bottom:1em;
 }
 .rodo{
+    position: relative;
     margin-top:calc( -1 * var(--rodo) + 1em);
 }
 .rodo p{
@@ -205,6 +206,9 @@ ul > li::marker{
     }
     .main__left > div{
         margin-bottom:0;
+    }
+    .main__left > div:last-child{
+        padding-bottom:1em;
     }
     .main__contact-username{
         color:var(--white);
