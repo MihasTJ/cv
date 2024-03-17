@@ -165,6 +165,14 @@ ul > li::marker{
 .main__contact-username span{
     color:var(--white);
 }
+.main__contact-media img{
+    width: 25px;
+    height: 25px;
+    padding: 3px 3px 3px 0;
+}
+.darkmode .main__contact-media img{
+    filter: invert(0);
+}
 .main__left{
     background-color: var(--secondary);
     max-width:173px;
