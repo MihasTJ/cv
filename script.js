@@ -2,13 +2,11 @@
 if (innerWidth <= 767){
     const desc = document.querySelector('.header__desc');
     const img = document.querySelector('.header__img');
-    // const username = document.querySelector('.main__contact-username');
     const main = document.querySelector('.main');
     const padding70 = document.querySelectorAll('.py-60, .px-60');
 
     main.classList.remove("flex");
     img.parentNode.insertBefore(desc, img.nextSibling);
-    // img.parentNode.insertBefore(username, img.nextSibling);
     desc.classList.add('py-30');
     padding70.forEach(element =>{
         element.classList.remove('py-60', 'px-60');
