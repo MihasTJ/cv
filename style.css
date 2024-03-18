@@ -13,6 +13,7 @@
 
     --rodo:80px;
     --rodo-height:30px;
+    --darkbtn:30px;
 }
 body{
     font-size:12px;
@@ -34,6 +35,11 @@ h3{
 a{
     text-decoration: none;
 }
+button{
+    cursor: pointer;
+    border:none;
+    z-index: 1;
+}
 /*darkmode*/
 .darkmode, .darkmode img, .darkmode .main__contact-username span{
     filter: invert(1);
@@ -51,17 +57,26 @@ a{
     align-items: center;
     justify-content: center;
     padding: 3px;
-    width: 25px;
-    height: 25px;
-    border:none;
-    cursor: pointer;
+    width: var(--darkbtn);
+    height: var(--darkbtn);
     background-color: var(--txt-clr);
-    z-index: 1;
 }
 #darkbtn img{
     width: 100%;
     height: auto;
     filter: invert(1);
+}
+/*** language button ***/
+.functionbtn button:not(:first-child){
+    margin-top:5px;
+}
+#switch-language{
+    position: absolute;
+    top:var(--darkbtn);
+    background-color: var(--txt-clr);
+    color:var(--white);
+    width: var(--darkbtn);
+    height: var(--darkbtn);
 }
 /* class funcion */
 .os-grid{
@@ -89,9 +104,9 @@ a{
     padding-left: 30px;
     padding-right: 30px;
 }
-.px-70{
-    padding-left: 70px;
-    padding-right: 70px;
+.px-60{
+    padding-left: 60px;
+    padding-right: 60px;
 }
 .py-30{
     padding-top: 30px;
@@ -140,7 +155,7 @@ ul > li::marker{
 .header__img {
     width: auto;
     object-fit: cover;
-    overflow: hidden;
+    background-color:rgb(21,25,31);
 }
 .header__desc{
     background-color: var(--primary);
@@ -149,7 +164,7 @@ ul > li::marker{
 .header__img, .header__desc {
     max-height: 270px;
     min-height: 270px;
-    margin:0 -70px;
+    margin:0 -60px;
 }
 .header__img img{
     width: 100%;
@@ -160,10 +175,15 @@ ul > li::marker{
 .main__contact-username{
     font-size: 3.2em;
     font-weight: 500;
-    margin-top: -1.6em;
+    margin-top: -2em;
+    position: relative;
+    bottom: -0.6em;
+    left:50%;
+    transform: translate(-50%);
 }
 .main__contact-username span{
     color:var(--white);
+    display: block;
 }
 .main__contact-media img{
     width: 20px;
@@ -175,7 +195,10 @@ ul > li::marker{
 }
 .main__left{
     background-color: var(--secondary);
-    max-width:173px;
+    max-width:184px;
+}
+.main__left >div:nth-child(2){
+    padding-top:2.5em;
 }
 .main__right{
     background-color: var(--white);
@@ -197,11 +220,12 @@ ul > li::marker{
 @media screen and (max-width:767px) {
     :root{
         --rodo-height:0;
+        --darkbtn:35px;
     }
     .header__img, .header__desc {
-        margin:0 -30px;
         max-height: unset;
         min-height: auto;
+        margin: 0 -30px;
     }
     .main__left{
         max-width: unset;
@@ -215,6 +239,11 @@ ul > li::marker{
     .main__contact-username{
         color:var(--white);
         text-wrap: nowrap;
+        font-size:2.2em;
+        bottom:0;
+    }
+    .main__contact-username span{
+        display: inline;
     }
     .main__left:first-child{
         padding-bottom:30px;
@@ -229,8 +258,19 @@ ul > li::marker{
     .darkmode .main__contact-username {
         filter:invert(1);
     }
-    #darkbtn{
-        width: 35px;
-        height: 35px;
+
+}
+@media screen and ((min-width:400px) and (max-width:767px)) {
+    .header__img {
+        width: calc(55% + 60px);
+    }
+    .header__img img{
+        width: 85%;
+    }
+    .header__desc{
+        width: 45%;
+    }
+    .main__contact-username{
+        padding-right: 35px;
     }
 }

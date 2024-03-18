@@ -12,21 +12,25 @@
 <body>
     <div class="container os-grid">
         <div class="main flex">
-            <button id="darkbtn"><img src="icons/dark-theme.svg" alt="darkmode"></button>
-            <div class="main__left flex fd-c px-70">
+            <div class="functionbtn">
+                <button id="darkbtn"><img src="icons/dark-theme.svg" alt="darkmode"></button>
+                <button data-translate="langbtn" id="switch-language">EN</button>
+            </div>
+            
+            <div class="main__left flex fd-c px-60">
                 <div class="header__img">
                     <img src="./img/myphoto.webp" alt="Zdjęcie profilowe autora">
+                    <div class="main__contact-username ta-c"><span>Michał</span> Janioł</div>
                 </div>
 
                 <div class="main__contact">
-                    <div class="main__contact-username ta-c"><span>Michał</span> Janioł</div>
-                    <h2>Kontakt</h2>
+                    <h2 data-translate="contact">Kontakt</h2>
                     <p>E-mail</p>
                     <a href="mailto:michal.janiol00@gmail.com" class="bold">michal.janiol00@gmail.com</a>
-                    <p>Telefon</p>
+                    <p data-translate="telephone">Telefon</p>
                     <a href="tel:+48880043966" class="bold">880 043 966</a>
-                    <p>Miejscowość</p>
-                    <p>Kraków</p>
+                    <p data-translate="city">Miejscowość</p>
+                    <p data-translate="city2">Kraków</p>
                     <div class="main__contact-media flex ai-c github">
                         <a href="https://github.com/MihasTJ" class="bold flex ai-c jc-c"><img src="icons/github.svg" alt="github-mark">/MihasTJ</a>
                     </div>
@@ -36,28 +40,28 @@
                 </div>
                 <div class="separator"></div>
                 <div class="main__abilities">
-                    <h2>UMIEJĘTNOŚCI I SPECJALNOŚCI</h2>
+                    <h2 data-translate="skills">UMIEJĘTNOŚCI I SPECJALNOŚCI</h2>
                     <ul>
                         <li>HTML, CSS/SCSS, JavaScript,
                             RWD, jQuery, PHP, SQL, GIT,
                             React.js, Visual Studio Code</li>
                         <li>Figma / Adobe XD, Photoshop</li>
-                        <li>Otwartość na naukę i nowe
+                        <li data-translate="skills2">Otwartość na naukę i nowe
                             metody pracy</li>
-                        <li>Umiejętność pracy w zespole</li>
+                        <li data-translate="skills3">Umiejętność pracy w zespole</li>
                     </ul>
                 </div>
                 <div class="main__languages">
-                    <h2>Języki</h2>
+                    <h2 data-translate="language">Języki</h2>
                     <ul>
-                        <li>Polski: ojczysty</li>
-                        <li>Angielski: B2+</li>
-                        <li>Niemiecki: A2</li>
+                        <li data-translate="language2">Polski: ojczysty</li>
+                        <li data-translate="language3">Angielski: B2+</li>
+                        <li data-translate="language4">Niemiecki: A2</li>
                     </ul>
                 </div>
                 <div class="main__hobby">
-                    <h2>ZAINTERESOWANIA</h2>
-                    <p>Pasjonuję się nowymi
+                    <h2 data-translate="hobby">ZAINTERESOWANIA</h2>
+                    <p data-translate="hobby2">Pasjonuję się nowymi
                         technologiami oraz rozwojem
                         aplikacji internetowych,
                         dlatego swoją przyszłość
@@ -67,72 +71,72 @@
                 </div>
                 
             </div>
-            <div class="main__right px-70">
+            <div class="main__right px-60">
                 <div class="header__desc px-30 flex ai-c">
-                    <p>Absolwent Informatyki i Ekonometrii na Krakowskiej Akademii im.
+                    <p data-translate="desc">Absolwent Informatyki i Ekonometrii na Krakowskiej Akademii im.
                         Andrzeja Frycza Modrzewskiego szuka możliwości rozwoju jako web
                         developer. Znam język angielski, chętnie podnoszę swoje
                         kwalifikacje, ucząc się i stawiając na rozwój.</p>
                 </div>
                 <div class="main__experience">
-                    <h2>Doświadczenie zawodowe</h2>
-                    <p class="bold">03.2023 - 07.2023 [5 mies.]</p>
-                    <h3>Praktyki / Wave Brand</h3>
-                    <div class="bold">trzciana.pl (Strona Gminy Trzciana):</div>
+                    <h2 data-translate="experience">Doświadczenie zawodowe</h2>
+                    <p class="bold">03.2023 - 07.2023</p>
+                    <h3 data-translate="experience2">Praktyki / Wave Brand</h3>
+                    <div data-translate="experience3" class="bold">trzciana.pl (Strona Gminy Trzciana):</div>
                     <ul>
-                        <li>Tworzenie strony zgodnie z wytycznymi standardów
+                        <li data-translate="experience3-1">Tworzenie strony zgodnie z wytycznymi standardów
                             dostępności WCAG</li>
-                        <li>Zarządzanie treściami przez personel gminy poprzez
+                        <li data-translate="experience3-2">Zarządzanie treściami przez personel gminy poprzez
                             implementacje firmowego systemu zarządzania treścią
                             (CMS)</li>
-                        <li>Wykorzystanie PHP do dynamicznego wyświetlania
+                        <li data-translate="experience3-3">Wykorzystanie PHP do dynamicznego wyświetlania
                             pozycji na stronie, takich jak artykuły bloga</li>
-                        <li>Implementacja projektu graficznego z Photoshop, za
+                        <li data-translate="experience3-4">Implementacja projektu graficznego z Photoshop, za
                             pomocą HTML, CSS, jQuery</li>
                     </ul>
 
-                    <div class="bold">a-trans.com.pl (Strona Usług Transportowych A-Trans):</div>
+                    <div data-translate="experience4" class="bold">a-trans.com.pl (Strona Usług Transportowych A-Trans):</div>
                     <ul>
-                        <li>Wykorzystanie technologii jQuery do implementacji
+                        <li data-translate="experience4-1">Wykorzystanie technologii jQuery do implementacji
                             karuzeli zdjęć</li>
-                        <li>Odwzorowanie strony z szablonu stworzonego w
+                        <li data-translate="experience4-2">Odwzorowanie strony z szablonu stworzonego w
                             programie Photoshop, z dbałością o zachowanie spójności
                             i czytelności interfejsu (UX)</li>
                     </ul>
 
-                    <div class="bold">pmwerbetechnik.at (Austriacka strona-wizytówka):</div>
+                    <div data-translate="experience5" class="bold">pmwerbetechnik.at (Austriacka strona-wizytówka):</div>
                     <ul>
-                        <li>Zoptymalizowanie strony pod kątem szybkości ładowania
+                        <li data-translate="experience5-1">Zoptymalizowanie strony pod kątem szybkości ładowania
                             i wydajności, przy minimalnym użyciu technologii takich
                             jak HTML,CSS, uwzględniając zasady responsywnego
                             projektowania (RWD)</li>
                     </ul>
                 </div>
                 <div class="main__education">
-                    <h2>Wykształcenie</h2>
+                    <h2 data-translate="education">Wykształcenie</h2>
                     <div class="main__education-newest">
                         <p>10.2020 - 03.2024</p>
-                        <div class="bold">Krakowska Akademia im. Andrzeja Frycza Modrzewskiego</div>
-                        <p>Kierunek: informatyka i ekonometria</p>
-                        <p>Poziom wykształcenia: inżynier</p>
+                        <div data-translate="education2" class="bold">Krakowska Akademia im. Andrzeja Frycza Modrzewskiego</div>
+                        <p data-translate="education2-1">Kierunek: informatyka i ekonometria</p>
+                        <p data-translate="education2-2">Poziom wykształcenia: inżynier</p>
                     </div>
                     
                     <div class="main__education-oldest">
                         <p>09.2016 – 06.2020</p>
-                        <div class="bold">Zespół Szkół Nr 1 w Bochni im. Stanisława Staszica</div>
-                        <p>Kierunek: informatyk</p>
-                        <p>Poziom wykształcenia: technik informatyk</p>
+                        <div data-translate="education3" class="bold">Zespół Szkół Nr 1 w Bochni im. Stanisława Staszica</div>
+                        <p data-translate="education3-1">Kierunek: informatyk</p>
+                        <p data-translate="education3-2">Poziom wykształcenia: technik informatyk</p>
                     </div>
                 </div>
                 <div class="main__achievements">
-                    <h2>Szkolenia, kursy, certyfikaty</h2>
+                    <h2 data-translate="achievement">Szkolenia, kursy, certyfikaty</h2>
                     <div class="main__achievements-item">
                         <p>06.2022</p>
-                        <div class="bold">,,Project Challange" - min. tworzenie profesjonalnej strony
+                        <div data-translate="achievement2" class="bold">,,Project Challange" - min. tworzenie profesjonalnej strony
                             firmowej, techniki i metody obsługi klienta problematycznego.</div>
                     </div>
                     <div class="main__achievements-item">
-                        <p>2018-2020</p>
+                        <p data-translate="">2018-2020</p>
                         <div class="bold">E12, E13, E14</div>
                     </div>
                 </div>
@@ -140,8 +144,8 @@
         </div>
     </div>
     <div class="os-grid">
-        <div class="rodo px-70 ta-c">
-            <p>Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie z
+        <div class="rodo px-60 ta-c">
+            <p data-translate="rodo">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie z
                 Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w
                 związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).</p>
         </div>
