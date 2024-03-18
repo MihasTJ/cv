@@ -26,8 +26,8 @@ Feel free to customize this according to your preferences or specific details yo
 ## Technologies
 <ul>
 <li>JavaScript - 42.0%</li>
-<li>HTML 37.9%</li>
-<li>CSS 20.1%</li>
+<li>HTML 37.7%</li>
+<li>CSS 20.3%</li>
 </ul>
 
 ## Setup
