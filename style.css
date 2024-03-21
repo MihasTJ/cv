@@ -262,7 +262,7 @@ ul > li::marker{
 }
 @media screen and ((min-width:400px) and (max-width:767px)) {
     .header__img {
-        width: calc(55% + 60px);
+        width: calc(55% + 30px);
     }
     .header__img img{
         width: 85%;
