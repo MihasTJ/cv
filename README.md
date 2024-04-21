@@ -37,5 +37,5 @@ Feel free to customize this according to your preferences or specific details yo
 
 ## Application view
 
-<img src="https://github.com/MihasTJ/cv/assets/113548265/85bc98a8-24b3-44e3-b50c-206f02b48661" alt="phone" width="100%">
+<img src="https://github.com/MihasTJ/cv/assets/113548265/85bc98a8-24b3-44e3-b50c-206f02b48661" alt="desktop-tablet" width="100%">
 <img src="https://github.com/MihasTJ/cv/assets/113548265/ebdd2492-df47-4721-ad26-9af1f08e6c52" alt="phone" width="30%">
